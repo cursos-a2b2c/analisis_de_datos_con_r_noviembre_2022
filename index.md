@@ -18,6 +18,8 @@ La instalación de R en su computadora depende del sistema operativo. En el siti
 
 y ejecutarlo.
 
+Además, van a requerir instalar RTools, que pueden descargar desde [https://cran.r-project.org/bin/windows/Rtools/rtools42/files/rtools42-5355-5357.exe](https://cran.r-project.org/bin/windows/Rtools/rtools42/files/rtools42-5355-5357.exe).
+
 Para instalar R en Linux Ubuntu se requieren algunos pasos extra que pueden ver en éste tutorial:
 
 [https://cran.r-project.org/bin/linux/ubuntu/#installation](https://cran.r-project.org/bin/linux/ubuntu/#installation)
@@ -55,8 +57,9 @@ Buen comienzo!
 
 # Actividades
 Las clases comenzarán el lunes 31 de octubre a las 14:00 hs (GMT -3).  
-Las clases teóricas son de 1.5 horas y comienzan a las 14:00 hs cada día.
-Las clases prácticas son de 1.5 horas y comienzan a las 16:40 hs cada día (dejamos 10 minutos de descanso entre la teórica y la práctica).
+Las clases teóricas son de 14:00 a 16:00 hs cada día.
+Las clases prácticas son de 16:00 a 18 hs cada día.
+Los descansos son a discreción del público y los docentes.
 Intentaremos ser puntuales en el comienzo y fin de cada jornada.
 
 No dejen de escribirnos por cualquier duda. Les agradecemos mucho por confiar en nosotros para acompañarlos en su formación. Daremos lo mejor de nosotros para que se lleven una buena y útil experiencia.
