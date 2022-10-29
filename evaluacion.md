@@ -7,3 +7,7 @@ Aclaraciones: Acá iremos subiendo las consultas y aclaraciones que nos solicite
 ### Consignas de la evaluación y datasets
 
 A definir
+
+### Notas
+
+A definir
