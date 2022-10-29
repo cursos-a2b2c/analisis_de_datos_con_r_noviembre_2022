@@ -1,6 +1,6 @@
 # ¡Bienvenidas y Bienvenidos!
 
-Bienvenidas y bienvenidos al curso de Introducción al Análisis de Datos con R, organizado por la Asociación Argentina de Bioinformática y Biología Computacional. En este curso, Andrés Rabinovich, Maximiliano Beckel, Bruno Kaufman los acompañaremos a conocer el lenguaje de programación R y cómo aprovecharlo para su trabajo e investigaciones.
+Bienvenidas y bienvenidos al curso de Introducción al Análisis de Datos con R, organizado por la Asociación Argentina de Bioinformática y Biología Computacional. En este curso, Andrés Rabinovich, Maximiliano Beckel y Bruno Kaufman los acompañaremos a conocer el lenguaje de programación R y cómo aprovecharlo para su trabajo e investigaciones.
 
 # Modalidad de cursada
 La modalidad será teórico-práctica y con clases virtuales en vivo a través de una reunión privada de Zoom. Los contenidos estarán basados en diferentes lecciones y recursos preparados por nosotros. Realizaremos actividades conjuntas en el horario del curso usando RStudio, con prácticas supervisadas durante y entre clases. Iremos subiendo los contenidos preparados y otros que se generen durante el curso en la sección "Clases".  
