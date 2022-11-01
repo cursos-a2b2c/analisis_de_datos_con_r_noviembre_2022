@@ -18,7 +18,7 @@
 <!--* [Clase grabada y mitad de la 3](https://youtu.be/dgJLgm0M0UY)-->
 <!--* [Práctica grabada](https://youtu.be/Z8RZSLS61d8)  -->
 
-<!--### Clase 2 bonus (para leer por su cuenta): For, if y definir nuestrar propias funciones-->
+### Clase 2 bonus (para leer por su cuenta): For, if y definir nuestrar propias funciones
 * [Script de R](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_2/dia_bonus.R)
 * [Cuadernillo](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_2/dia_bonus.Rmd)
 
