@@ -15,8 +15,14 @@
 * [Script de R](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_2/dia_2.R)
 * [Cuadernillo](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_2/curso_r_dia2.Rmd)
 * [Datasets (descomprimir en la misma carpeta)](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_2/datasets.zip)
+<<<<<<< HEAD
 * [Clase grabada y mitad de la 3](https://youtu.be/dgJLgm0M0UY)
 * [Práctica grabada](https://youtu.be/Z8RZSLS61d8)
+=======
+* [Práctica resuelta](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_2/solucion_practica_dia_2.R)
+<!--* [Clase grabada y mitad de la 3](https://youtu.be/dgJLgm0M0UY)-->
+<!--* [Práctica grabada](https://youtu.be/Z8RZSLS61d8)  -->
+>>>>>>> 0d69502379fafc35bf63f78bf60005e40a1fa597
 
 ### Clase 2 bonus (para leer por su cuenta): For, if y definir nuestrar propias funciones
 * [Script de R](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_2/dia_bonus.R)
@@ -24,6 +30,7 @@
 
 
 ### Clase 3: Introducción a la estadística descriptiva
+<<<<<<< HEAD
 * [Práctica](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_3/practica.pdf)  -->
 * [Práctica resuelta](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_3/solucion_practica_dia_3.R)    -->
 * [Script de R](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_3/Dia3.R)  -->
@@ -37,13 +44,29 @@
 * [Script de R](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_4/dia_4.R)  -->
 * [Datasets (descomprimir en la misma carpeta)](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_4/datasets.zip)  -->
 * [Presentación](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_4/clase_4_presentacion.pdf)  -->
+=======
+* [Práctica](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_3/practica.pdf)
+* [Práctica resuelta](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_3/solucion_practica_dia_3.R)
+* [Script de R](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_3/Dia3.R)
+* [Dataset1](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_3/exp_mtx.Rdata)
+* [Dataset2](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_3/antropometria.csv)
+* [Dataset3](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_3/cases-covid-19-by-country.csv)
+* [Presentación](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_3/Dia3.pdf)
+
+### Clase 4: Breve introducción a las pruebas de hipótesis (con R).
+* [Práctica](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_4/practica_dia_4.pdf)
+* [Práctica resuelta](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_4/solucion_practica_dia_4.R)
+* [Script de R](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_4/dia_4.R)
+* [Datasets (descomprimir en la misma carpeta)](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_4/datasets.zip)
+* [Presentación](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_4/clase_4_presentacion.pdf)
+>>>>>>> 0d69502379fafc35bf63f78bf60005e40a1fa597
 
 ### Clase 5: Introducción a Machine learning: aprendizaje no supervisado.
-<!--* [Práctica](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_5/clase_5_practica.pdf)  -->
-<!--* [Práctica resuelta](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_5/clase_5_resueltos.R)    -->
-<!--* [Script de R](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_5/clase_5.R)  -->
-<!--* [Datasets (descomprimir en la misma carpeta)](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_5/datasets.zip)  -->
-<!--* [Presentación](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_5/clase_5_presentacion.pdf)  -->
+* [Práctica](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_5/clase_5_practica.pdf)
+* [Práctica resuelta](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_5/clase_5_resueltos.R)
+* [Script de R](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_5/clase_5.R)
+* [Datasets (descomprimir en la misma carpeta)](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_5/datasets.zip)
+* [Presentación](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_5/clase_5_presentacion.pdf)
 
 ### Clase 6: Introducción a Machine learning: aprendizaje supervisado.
 <!--* [Script de R](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_6/clase_6.R)  -->
