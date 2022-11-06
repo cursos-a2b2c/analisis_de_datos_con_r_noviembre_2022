@@ -11,7 +11,7 @@ setwd("clases/clase_3") #reemplazalo con tu directorio de trabajo
 
 #a)
 #Cargamos antropometria
-antropometria <- read.csv("datasets/antropometria.csv", stringsAsFactors=FALSE)
+antropometria <- read.csv("antropometria.csv", stringsAsFactors=FALSE)
 
 #b)
 #Cantidad de datos
@@ -158,8 +158,8 @@ cor(adultos$weight[adultos$sex == "F"], adultos$height[adultos$sex == "F"])
 #Parece existir correlación entre ambas variables. Queda el ejercicio para Hombre.
 
 #g) 
-hist(adultos$height[adultos$sex == "M"], col = "red", breaks = 20, xlab = "Altura", main = "Histograma de altura")
-hist(adultos$height[adultos$sex == "F"], col = "green", add = T, breaks = 20)
+hist(adultos$height[adultos$sex == "M"], col = rgb(red=1, blue=0, green=0, alpha=0.3), breaks = breaks_cust, xlab = "Altura", main = "Histograma de altura")
+hist(adultos$height[adultos$sex == "F"], col = rgb(red=0, blue=0, green=1, alpha=0.3), add = T, breaks = breaks_cust)
 legend("topleft", legend = c("Mujeres", "Hombres"), col = c("green", "red"), fill = c("green", "red"))
 #Vemos que las distribuciones se solapan pero las medias son bien distintas.
 

@@ -6,9 +6,8 @@
 #para eso tenemos que tener una variable que vaya acumulando el resultado de la suma en cada iteración (n),y otra 
 #variable que vaya recorriendo los números desde 1 hasta 100 (i)
 
-n <- 0
-for (i in 1:100){
-  n=n+i
+for (i in 1:4){
+  n = sd(iris[,i])
 }
 
 print(n)
@@ -18,7 +17,7 @@ sum(1:100)
 
 #queremos saber si un numero es par o impar, entonces debemos usar la estructura if - else
 
-numero = 7
+numero = 10
 if (numero%%2 == 0){
   print("El numero es par")
 }else{
@@ -83,7 +82,7 @@ print(total)
 total <- sumar(total, 10)
 
 
-#otro ejemplo pero usando un for dentro de la funci�n...
+#otro ejemplo pero usando un for dentro de la funci?n...
 
 sumar_hasta <- function(n, m){
   suma_i <- 0
