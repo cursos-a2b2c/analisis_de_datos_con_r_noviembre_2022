@@ -17,7 +17,7 @@
 * [Datasets (descomprimir en la misma carpeta)](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_2/datasets.zip)
 * [Clase grabada y mitad de la 3](https://youtu.be/dgJLgm0M0UY)
 * [Práctica grabada](https://youtu.be/Z8RZSLS61d8)
-* [Práctica resuelta](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_2/dia2resuelto.R)
+* [Práctica resuelta](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_2/dia2_resuelto.R)
 <!--* [Clase grabada y mitad de la 3](https://youtu.be/dgJLgm0M0UY)-->
 <!--* [Práctica grabada](https://youtu.be/Z8RZSLS61d8)  -->
 
