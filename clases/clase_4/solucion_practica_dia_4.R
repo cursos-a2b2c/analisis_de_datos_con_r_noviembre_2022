@@ -18,7 +18,7 @@ bartlett.test(grupos)
 
 #Vale igualdad de varianza, hagamos el t-test de dos muestras
 t.test(sleep$extra[sleep$group == 1], sleep$extra[sleep$group == 2], var.equal = T)
-#El pvalue es menor a 0.05, podemos rechazar la hipótesis nula de que las dos medias son iguales. El tratamiento parece funcionar.
+#El pvalue es mayor a 0.05, no podemos rechazar la hipótesis nula de que las dos medias son iguales.
 
 #b)
 cd4 <- boot::cd4 
