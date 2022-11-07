@@ -57,3 +57,45 @@ hist(df_oxmind$Depression_T1T3, xlab='Cambio en depresion', ylab='Frecuencia', m
 #d) Exportacion.
 #write.xlsx(df_oxmind, file='oxford_mindfulness_procesado.xlsx')#Si usan excel usen esto.
 write.table(df_oxmind, file='oxford_mindfulness_procesado.csv', sep=',', col.names=T, quote=F)
+
+
+#Clase Bonus: Estructuras de control
+#Imprimir en pantalla los números del 1 al 100 utilizando un for.
+for(i in 1:100){ 
+  print(i)  
+}
+
+#Imprimir en pantalla los números del 1 al 100 sin utilizar un for. Ayuda: : o ?seq
+numeros <- seq(from = 1, to = 100, by = 1)
+print(numeros)
+#Otra forma
+numeros <- 1:100
+numeros
+
+#Elegir un número al azar entre 0 y 1 con la función runif(). Utilizando if else imprimir “mayor que 0.5” o “menor que 0.5” dependiendo el caso.
+?runif #runif genera n numeros al azar entre 0 y 1
+numero_al_azar <- runif(n = 1)
+if(numero_al_azar > 0.5){
+  print("Mayor a 0.5")
+}else{
+  print("Menor o igual a 0.5")
+}
+
+#Si quisieramos probar tres condiciones, por ejemplo, menor, mayor o igual
+if(numero_al_azar > 0.5){
+  print("Mayor a 0.5")
+}else if(numero_al_azar < 0.5){
+  print("Menor a 0.5")
+}else{
+  print("Igual a 0.5")
+}
+
+#Para valientes: Generar una matriz de 5x10. Colocar dentro de cada posición la suma de la fila y de la columna de esa posición. Utilizá un for dentro de otro for.
+#Definimos una matriz de ceros
+m <- matrix(0, ncol = 10, nrow = 5)
+for(fila in 1:5){ #Nos movemos primero en la fila y dentro de cada fila, una por una cada columna
+  for(columna in 1:10){
+    m[fila, columna] <- fila + columna #Subseteamos la matriz en la fila y columna dada y le asignamos la suma
+  }
+}
+print(m) #Veamos si funcionò
