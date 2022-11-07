@@ -32,6 +32,7 @@
 * [Script de R](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_3/Dia3.R)
 * [Dataset1](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_3/exp_mtx.Rdata)
 * [Dataset2](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_3/antropometria.csv)
+* [Dataset3](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_3/cases-covid-19-by-country.csv)
 * [Presentación](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_3/Dia3.pdf)
 
 ### Clase 4: Breve introducción a las pruebas de hipótesis (con R).

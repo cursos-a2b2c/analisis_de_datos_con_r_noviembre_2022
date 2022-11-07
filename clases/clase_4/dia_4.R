@@ -146,7 +146,7 @@ t.test(ratoncitos$weight, alternative = "greater", mu = 19)
 plantas <- datasets::PlantGrowth
 View(plantas)
 #Veamos como se distribuyen las plantas dentro de cada grupo
-boxplot(weight ~ group, data = plantas)
+boxplot(weight ~ group)#, data = plantas)
 
 #Para testear que las dos varianzas sean iguales (homogeneidad de varianzas) podemos usar el test de bartlett.
 #H0: Los datos tienen igual varianza
@@ -155,6 +155,7 @@ bartlett.test(list(plantas$weight[plantas$group == "ctrl"], plantas$weight[plant
 bartlett.test(list(plantas$weight[plantas$group == "ctrl"], plantas$weight[plantas$group == "trt2"]))
 
 #Para testear que cada variable sea normal
+hist(plantas$weight[plantas$group == "ctrl"], breaks=15)
 shapiro.test(plantas$weight[plantas$group == "ctrl"])
 shapiro.test(plantas$weight[plantas$group == "trt1"])
 shapiro.test(plantas$weight[plantas$group == "trt2"])
@@ -205,7 +206,7 @@ var(mejillones$Aam[mejillones$Location == "Petersburg"])
 var(mejillones$Aam[mejillones$Location == "Tillamook"])
 
 #Son practicamente iguales, podemos usar anova
-summary(aov(Aam ~ Location, mejillones[mejillones$Location ]))
+summary(aov(Aam ~ Location, mejillones))
 
 #Hay muchisimos tests para muchisimos casos distintos, les recomendamos fuertemente que lean
 #McDonald J. (2014). HANDBOOK OF BIOLOGICAL STATISTICS, SPARKY HOUSE PUBLISHING. (http://www.biostathandbook.com/HandbookBioStatThird.pdf)
