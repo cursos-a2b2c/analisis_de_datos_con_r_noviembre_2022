@@ -7,7 +7,7 @@ Aclaraciones: Acá iremos subiendo las consultas y aclaraciones que nos solicite
 ### Consignas de la evaluación y datasets
 
 * [Consignas](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/evaluacion/evaluacion.R)  
-* [Datasets (descomprimir en la misma carpeta)](https://cursos-a2b2c.github.io/analisis_de_datos_con_noviembre_2022/evaluacion/datasets.zip)  
+* [Datasets (descomprimir en la misma carpeta)](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/evaluacion/datasets.zip)  
 
 ### Notas
 
