@@ -52,3 +52,4 @@
 ### Clase 6: Introducción a Machine learning: aprendizaje supervisado.
 * [Script de R](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_6/clase_6.R)
 * [Datasets (descomprimir en la misma carpeta)](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_6/datasets.zip)
+* [Script de R modificado en clase](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/clases/clase_6/clase_6_bis.R)
