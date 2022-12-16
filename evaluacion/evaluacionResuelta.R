@@ -1,14 +1,13 @@
 #############################################################################
 #              Curso de análisis de datos con R
 #Asociación Argentina de Bioinformática y Biología Computacional
-#                 Fundación Instituto Leloir
-#                         Marzo 2021
+#                         Noviembre 2022
 #                      Evaluación del curso
 #
-#Para organizarnos mejor: 
+#Para organizarnos mejor:
 #Entregar un script de R cuyo nombre sea apellido_nombre.R con la resolución
-#de los ejercicios a esc.bioinf.a2b2c.leloir@gmail.com y con el subject "Evaluación R".
-#Pueden realizarnos consultas a ese mismo email con el subject "Consultas Evaluación R". 
+#de los ejercicios a andresrabinovich@gmail.com y con el subject "Evaluación R".
+#Pueden realizarnos consultas a ese mismo email con el subject "Consultas Evaluación R".
 #############################################################################
 
 ##################################################################################################
@@ -24,12 +23,11 @@
 
 #################Consignas########################
 #Cada ejercicio otorga 1 punto.
-#Los bonus "crack de R" otorgan un punto.
 
 #Problema 1: Abrir el dataset nestlings.csv en RStudio y describirlo exhaustivamente para comprender el contenido del mismo.
-#ej: cantidad de observaciones, cantidad de atributos, tipo de atributos, etc. 
+#ej: cantidad de observaciones, cantidad de atributos, tipo de atributos, etc.
 
-setwd("~/curso/evaluacion/datos") #Elegimos el directorio de trabajo
+setwd("~/trabajo/cursos/analisis_de_datos_con_r_noviembre_2022/evaluacion/") #Elegimos el directorio de trabajo
 
 nestlings <-  read.csv("nestlings.csv") #Leemos el dataset
 
@@ -39,7 +37,7 @@ ncol(nestlings) #Cantidad de columnas o atributos
 str(nestlings) #Visualizamos la estructura del dataset
 colnames(nestlings) #Los nombres de los atributos
 View(nestlings) #Lo abrimos tipo excel para darle una mirada general rápida
-#El dataset contiene 66 observaciones con 6 atributos cada una. En particular son de interés manipulation (chr), 
+#El dataset contiene 66 observaciones con 5 atributos cada una. En particular son de interés manipulation (chr), 
 #que contiene el tratamiento realizado, GPx_activity (num) que contiene la actividad de la enzima y sample_weight (num) que contiene el peso de cada pichón
 
 #Problema 2: Calcular cuántas observaciones hay de Control y cuántas de IGF.¿Los datos están
@@ -49,9 +47,10 @@ table(nestlings$manipulation) #Usamos table para contar cuantos elementos hay de
 
 #Problema 3: Calcular media, mediana, desvío estándar y distancia inter cuartil para GPx_activity
 #y sample_weight. Realizar esta descripción para cada tratamiento por separado.
-#¿Las medidas de centralidad son similares para cada tratamiento y para cada atributo? ¿Y las de 
-#dispersión? 
-#GPx_activity
+#¿Las medidas de centralidad son similares para cada tratamiento y para cada atributo? ¿Y las de
+#dispersión?
+
+#Veamos GPx_activity
 GPx_activityControlInjected <- nestlings$GPx_activity[nestlings$manipulation=="Control-injected"]#Podemos subsetear y guardar en una nueva variable 
 GPx_activityIGF1injected    <- nestlings$GPx_activity[nestlings$manipulation=="IGF-1-injected"]#Podemos subsetear y guardar en una nueva variable 
 mean(GPx_activityControlInjected) #Calculamos media
@@ -68,7 +67,10 @@ summary(GPx_activityIGF1injected) #Un resumen rápido de todo
 #Vemos que la media y mediana para control y para IGF son diferentes. ¿Serán significativamente diferentes? ¿Cómo podríamos saberlo?
 #Lo mismo ocurre para el desvío y el IQR. 
 
-#sample_weight
+#Veamos sample_weight
+sample_weightControlInjected <- nestlings$sample_weight[nestlings$manipulation=="Control-injected"]#Podemos subsetear y guardar en una nueva variable 
+sample_weightIGF1injected    <- nestlings$sample_weight[nestlings$manipulation=="IGF-1-injected"]#Podemos subsetear y guardar en una nueva variable 
+
 mean(sample_weightControlInjected) #Calculamos media
 mean(sample_weightIGF1injected) #Calculamos media
 median(sample_weightControlInjected) #Calculamos mediana
@@ -84,13 +86,11 @@ summary(sample_weightIGF1injected) #Un resumen rápido de todo
 #Lo mismo ocurre para el desvío y el IQR.
 
 
-#Problema 4: Realizar un boxplot y un histograma de GPx_activity para cada tratamiento. ¿Existen datos atípicos?
-#En caso de existir, retirar esas observaciones y mostrar el criterio utilizado para decidirlo.
+#Problema 4: Realizar un boxplot y un histograma de GPx_activity para cada tratamiento. 
+#Retirar los datos que son muy extremos (decidan ustedes qué consideran muy extremos)
 #(Ayuda: no hay que retirar solamente el valor de GPx_activity, hay que retirar toda la fila del valor atípico)
 #Por ejemplo, supongamos que la observación 100 tiene un GPx_activity atípico, entonces:
 #nestlingsSinAtipicos <- nestlings[-100, ] #Es decir, sacamos toda la fila.
-#Bonus crack de R: Realizar esos 4 gráficos en un mismo layout, con el boxplot en forma horizontal por debajo
-#del histograma correspondiente a cada tratamiento. 
 #A partir de acá, seguir trabajando con el nuevo dataframe con los datos atípicos removidos.
 matriz_layout <- matrix(1:4, nrow=2, ncol=2, byrow = F) #Armamos el layout
 layout(matriz_layout)
@@ -126,8 +126,8 @@ nestlingsSinOutliers <- nestlings[-a_remover, ]
 #Seguramente si volvemos a graficar volvamos a encontrar outliers, en general alcanza con remover los primeros que suelen ser los más gruesos.
 
 
-#Problema 5: Visualizar en un mismo gráfico de boxplot el sample_weight para cada tratamiento. ¿Existen datos atípicos? 
-#En caso de existir, retirar esas observaciones y mostrar el criterio utilizado para decidirlo.
+#Problema 5: Visualizar en un mismo gráfico de boxplot el sample_weight para cada tratamiento. 
+#Retirar los datos que son muy extremos (decidan ustedes qué consideran muy extremos)
 #Ayuda, para decirle a un boxplot que grafique una variable 'y' pero separando por la variable 'x', pueden usar
 #formulas: boxplot(y ~ x).
 #A partir de acá, seguir trabajando con el nuevo dataframe con los datos atípicos removidos.
@@ -151,7 +151,7 @@ nestlingsSinOutliers <- nestlingsSinOutliers[-a_remover, ]
 #A partir de acá, uno debería trabajar con nestlingsSinOutliers, pero por la dificultad que tiene, podían trabajar con el original, no había problema.
 #En datos reales, sin embargo, deberían trabajar sinOutliers.
 
-#Problema 6: Para poder determinar si existe una diferencia significativa en el peso entre estos los grupos, control y tratamiento, realizar un T test. 
+#Problema 6: Para poder determinar si existe una diferencia significativa en el peso entre estos los grupos, control y tratamiento, realizar un T test.
 #¿A qué conclusión se llega?
 #Realizar previamente todos los tests necesarios para garantizar que es válido aplicar un t test.
 #Ayuda: para el test de homogeneidad de varianza, bartlett.test, es necesario previamente
@@ -176,26 +176,69 @@ t.test(nestlingsSinOutliers$sample_weight[nestlingsSinOutliers$manipulation=="Co
 plot(nestlingsSinOutliers$GPx_activity, nestlingsSinOutliers$sample_weight)
 #Pareciera existir una relación lineal creciente entre ambas
 
-#Problema 9: realizar una regresión lineal donde sample_weight dependa de GPx_activity. ¿Es un buen ajuste? ¿Por qué?
-#Ayuda: la función lm permite realizar un ajuste lineal donde 'y' depende de 'x' usando fórmulas: lm(y ~ x, data = misdatos).
-#Esta función devuelve un objeto de tipo lm que puede ser pasado a la función summary para que devuelva todos los estadísticos de 
-#interés (R2, coeficientes, pvalues, etc): summary(lm(y ~ x, data = misdatos))
-#Bonus crack de R: Realizar la misma regresión lineal pero agregando como variable el tratamiento.
-#¿Mejora la estimación o el tratamiento no parece afectar la relación?
-#Ayuda: una fórmula dónde 'y' depende de dos variables se escribe como y ~ x + z (o y ~ x*z en caso de interacción entre las variables)
+#Problema 8: Realizar un ajuste lineal entre GPx activity y sample weight y graficarlo.
+#Ayuda: funcion lm
 ajuste <- lm(sample_weight ~ GPx_activity, nestlingsSinOutliers) #Ajustemos
 plot(nestlingsSinOutliers$GPx_activity, nestlingsSinOutliers$sample_weight)
 abline(ajuste, col = "red")
 summary(ajuste) #Veamos cómo da
 #Si bien observamos una relación entre ambas en el scatter plot y el pvalue de GPx_activity nos confirma esa relación, el ajuste no parece ser muy bueno, con un R2 de 0.19. 
 
-#Agreguemos otra variable y después la interacción
-ajuste <- lm(sample_weight ~ GPx_activity + manipulation, nestlingsSinOutliers) #Ajustemos
-summary(ajuste) #Veamos cómo da
-#Practicamente no hay cambios, el pvalue de manipulation parece indicar que no suma nada haberlo agregado
+#Problema 9: Cargar el dataset vinos.RData.
+#El mismo consiste en los resultados del analisis quimico de vinos cultivados en la misma region de Italia pero en tres cultivares diferentes.
+#Realizar un PCA y graficarlo. ¿Cuánta variabilidad explican las primeras 2 componentes? ¿Será una buena representación del dataset un gráfico 2d con estas primeras dos componentes?
 
-ajuste <- lm(sample_weight ~ GPx_activity*manipulation, nestlingsSinOutliers) #Ajustemos con interacción
-summary(ajuste) #Veamos cómo da
-#Practicamente no hay cambios, el pvalue de manipulation y de la interacción parece indicar que no suma nada haberlo agregado
-#el modelo inicial termina siendo el más adecuado
+#Cargamos el RData
+(load("vinos.RData")) #Los corchetes externos hacen que al cargar el RData, R nos muestre el nombre de todas las variables contenidas
+
+#Veamoslo un poco
+View(vinos)
+
+#Hacemos el pca. Recordar de estandarizar usando scale. y center como TRUE
+pca_vinos <- prcomp(vinos, scale. = T, center = T) 
+plot(pca_vinos$x[, 1:2])
+summary(pca_vinos) #Las dos primeras componentes explican un 55% de la varianza. No está tan mal, un gráfico 2d podría ser una representación digna.
+
+#Problema 10: #Cual es el vino más cercano al 121? Y al 137?
+#Clusterizar con kmeans. Elegir un k con el criterio del codo.
+#Realizar un silohuette y decidir si todos los datos quedaron agrupados en grupos compactos.
+#Graficar el PCA coloreando por clusters.
+
+#Ponemos los numeritos de cada vino en el boxplot y nos fijamos a ojo en el gráfico. Podríamos haber hecho alguna otra cosa más sofisticada
+#como una matriz de distancias pero con esto alcanzaba
+text(x = pca_vinos$x[, 1], y = pca_vinos$x[, 2], labels = rownames(vinos)) #El más cercano al 121 parece ser el 16 y al 137 parece ser el 155.
+
+#si hubieramos querido hacer distancias, usamos la función dist, transformamos a matrix y subseteamos
+d <- as.matrix(dist(pca_vinos$x[, 1:2])) #si usamos solo las primeras componentes
+sort(d["121", ]) #Ordenamos de menor a mayor, el más chico es él mismo, necesitamos el segundo más chico, que efectivamente es el 16
+
+#Veamos qué pasa si usamos el dataset completo del pca
+d <- as.matrix(dist(pca_vinos$x)) 
+sort(d["121", ]) #Ordenamos de menor a mayor, el más chico es él mismo, necesitamos el segundo más chico, que es el 25. Usar menos componentes efectivamente nos hace perder información!
+
+#Veamos qué pasa si usamos el dataset completo original (pero estandarizado)
+vinos_estandarizados <- scale(vinos)
+d_original <- as.matrix(dist(vinos_estandarizados)) 
+sort(d_original["121", ]) #Ordenamos de menor a mayor, el más chico es él mismo, necesitamos el segundo más chico, que es el 25.
+
+#Comparemos las dos distancias calculadas a partir de pca y original. Esperan que sean distintas o iguales?
+all.equal(d, d_original) #Esto remite a lo que decíamos que pca se puede pensar como la rotación de los ejes, sin cambiar la distancia entre los puntos.
+
+#Usamos el criterio del codo con hasta 10 clusters
+sse <- c()
+for(k in 2:10){
+  set.seed(1234567) #Por qué pongo la semilla adentro del for?
+  sse <- c(sse, kmeans(x = vinos_estandarizados, centers = k)$tot.withinss) #Lo hago con el original estandarizado.
+}
+plot(2:10, sse) #Veamos el codo
+
+#Hacemos el cluster con k = 4 y graficamos el silhouette.
+library(cluster)
+set.seed(1234567) #Por qué pongo la semilla adentro del for?
+clusters <- kmeans(x = vinos_estandarizados, centers = 4)
+plot(silhouette(clusters$cluster, dist(vinos_estandarizados))) #Los clusters más grandes quedaron compactos. El cluster mas chico tiene un par de observaciones no muy compactas, habría que ver qué son
+
+#Graficamos el scatter. Para eso usamos el pca
+plot(pca_vinos$x[, 1:2], col = clusters$cluster) #Ahí se ven las observaciones que quedaban mal agrupadas. Podríamos analizar las muestras del cluster 1 por separado despues.
+
 
