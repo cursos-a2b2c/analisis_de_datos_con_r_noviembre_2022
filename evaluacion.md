@@ -11,7 +11,7 @@ Aclaraciones: Acá iremos subiendo las consultas y aclaraciones que nos solicite
 
 ### Notas
 
-A definir
+* [Notas](https://cursos-a2b2c.github.io/analisis_de_datos_con_r_noviembre_2022/evaluacion/notas.xls)
 
 ### Evaluación resuelta (una posible resolución, como vimos con R, hay muchas formas de hacer lo mismo)
 
